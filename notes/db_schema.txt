@@ -1,0 +1,36 @@
+
+request:
+	id
+	id_category
+	id_request_status
+	tstamp
+	title
+	description
+	name
+
+request_status:
+	id
+	id_status
+	note
+
+status:
+	id
+	title
+	icon
+
+votes:
+	id_request
+	ip
+
+categories:
+	id
+	tstamp
+	title
+	icon
+
+comments:
+	id
+	id_request
+	tstamp
+	comment
+	name
