@@ -7,7 +7,7 @@
 		var newItemLink = $('a[href="#new-item"]');
 
 		$.ajax({
-			url: '/ajax.php',
+			url: './ajax.php',
 			dataType: 'json',
 			success: function(object) {
 				$.each(object.requests, function() {
