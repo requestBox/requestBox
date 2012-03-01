@@ -1,19 +1,22 @@
 
+.ajax-loader {
+	height: 50px;
+	background-image: url('../img/ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 .navbar .brand {
 	height: 32px;
 	padding-top: 4px;
 	padding-bottom: 4px;
 }
 
-.request-list a[href="#new-item"] {
-	color: #000000;
-}
-
-.request-list .item .votes.disabled {
+.request .votes.disabled {
 	opacity: 0.65;
 }
 
-.request-list .item .votes > .count {
+.request .votes > .count {
 	margin-bottom: 0;
 	color: #006dcc;
 	font-size: 30px;
@@ -22,16 +25,20 @@
 	line-height: 35px;
 }
 
-.request-list .item .votes > .description {
+.request .votes > .description {
 	font-size: 22px;
 	font-weight: bold;
 	text-align: center;
 	line-height: 27px;
 }
 
-.request-list .btn.pull-right {
+.request .btn.pull-right {
 	margin-left: 4px;
 	margin-bottom: 4px;
+}
+
+#new-request-link a[href="#new-item"] {
+	color: #000000;
 }
 
 @media (max-width: 480px) {
@@ -67,7 +74,7 @@
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
-	.request-list .item .buttons {
+	#request-list .request .buttons {
 		width: 100%;
 	}
 }
