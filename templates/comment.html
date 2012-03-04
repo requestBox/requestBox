@@ -1,0 +1,15 @@
+
+{{each(i) comments}}
+	<div class="comment">
+		<div class="row-fluid">
+			<div class="span1"></div>
+			<div class="span10">
+				<blockquote>
+					<p>${comments[i].comment}</p>
+					<small>${comments[i].name}</small>
+				</blockquote>
+			</div>
+			<div class="span1"></div>
+		</div>
+	</div>
+{{/each}}

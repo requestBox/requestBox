@@ -1,0 +1,31 @@
+
+{{each(i) requests}}
+	<div class="well request">
+		<div class="row-fluid">
+			<div class="span2 votes">
+				<p class="count">${requests[i].votes_count}</p>
+				<p class="description">Votes</p>
+			</div>
+
+			<div class="span7">
+				<blockquote>
+					<h3>${requests[i].title}</h3>
+					<p>${requests[i].description}</p>
+					<small>posted by ${requests[i].name}</small>
+				</blockquote>
+			</div>
+
+			<div class="span3 buttons">
+				<a class="btn pull-right" href="#comment">
+					<i class="icon-comment"></i>
+					<span>Comment</span>
+				</a>
+
+				<a class="btn btn-info pull-right" href="#vote">
+					<i class="icon-white icon-plus"></i>
+					<span>Vote</span>
+				</a>
+			</div>
+		</div>
+	</div>
+{{/each}}

@@ -32,7 +32,8 @@
 	line-height: 27px;
 }
 
-.request .btn.pull-right {
+.request .btn.pull-right,
+.comment .btn.pull-right {
 	margin-left: 4px;
 	margin-bottom: 4px;
 }
